@@ -245,11 +245,10 @@
     
     .next-meetup-header {
         border-top: 1px solid black;
-        width: 110%;
+        width: 100%;
         margin-bottom: 20px;
         margin-top: 20px;
         padding-top: 20px;
-        word-wrap: none;
     }
 
     .next-meetup-pictures {
