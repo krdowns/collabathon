@@ -11,28 +11,42 @@
       rel="stylesheet">
 </head>
 <body>
-    <nav class="menu">
-        <a href="#" class="item-menu">Our Story</a>
-        <a href="#" class="item-menu">Highlights</a>
-        <a href="#" class="item-menu">Next Meetup</a>
-        <button class="nav-signup">SIGNUP</button>
-    </nav>
-    <main>
+    <header>
         <section class="splash">
-            <div class="logo-container">
-                <h1 class="logo">LOGO</h1>
-            </div>
-                <div class="top">
-                    <a href="#" class="menu-icon"><i class="material-icons">dehaze</i></a>
+            <div class="top">
+                <a href="#" class="menu-icon">
+                    <i class="material-icons">
+                        dehaze
+                    </i>
+                </a>
+                <div class="logo-container">
+                    <h1 class="logo">LOGO</h1>
                 </div>
-            <section class="top-button-container">
+            </div>
+                <nav class="menu">
+                    <a href="#about" class="item-menu">
+                        Our Story
+                    </a>
+                    <a href="#highlights" class="item-menu">
+                        Highlights
+                    </a>
+                    <a href="#next-meetup" class="item-menu">
+                        Next Meetup
+                    </a>
+                    <button class="nav-signup">
+                        SIGNUP
+                    </button>
+                </nav>
+            <div class="top-button-container">
                 <button class="sign-up-top">
                     SIGN UP
                 </button>
-            </section>
+            </div>
         </section>
+    </header>
 
-        <section class="about">
+    <main>
+        <section id="about" class="about">
             <h1 class="about-header">OUR STORY</h1>
                 <div class="article-container">
                     <article class="about-article">
@@ -48,7 +62,7 @@
                 </div>
         </section>
 
-        <section class="highlights">
+        <section id="highlights" class="highlights">
             <h1 class="highlights-header">HIGHLIGHTS</h1>
             <div class="highlights-pictures">
                 <img src="./images/hiking2.jpg">
@@ -71,7 +85,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="next-meetup" class="next-meetup">
             <h1 class="next-meetup-header">NEXT MEETUP</h1>
             <img src="./images/hiking5.jpg">
             <p>Date_Time_Location</p>

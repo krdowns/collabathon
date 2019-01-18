@@ -6,6 +6,10 @@
         font-family: sans-serif;
     }
     
+    html {
+        scroll-behavior: smooth;
+    }
+
     body {
         margin: 0 auto;
         overflow-x: hidden;
@@ -19,6 +23,10 @@
     
     article {
         margin: 5% 10%;
+    }
+    
+    article p {
+        margin-bottom: 4%;
     }
 
     .article-container img {
@@ -36,27 +44,34 @@
         font-family: helvetica, sans-serif;
         color: white;
     }
-    
+
+    header {
+        padding-top: 0;
+        position: relative;
+    }
+
     .top {
         position: relative;
         text-align: right;
         margin-right: 5%;
-        margin-top: -11.5%;
         color: white;
+        width: 99%;
     }
-    
+
     .logo {
         color: white;
-        font-size: 48px;
-        padding-top: 2.5%;
+        font-size: 36px;
+        margin-top: -11.5%;
         width: 99%;
         text-align: center;
     }
     
     .top a.menu-icon i {
+        position: relative;
         color: #999;
         font-size: 40px;
-        padding-top: -2px;
+        margin-top: 20px;
+        margin-right: 5%;
         transition: .2s ease;
         text-decoration: none;
     }
@@ -68,9 +83,9 @@
     nav.menu {
         width: 100%;
         min-height: calc(46vh - 70px);
-        padding-top: 20%;
+        padding-top: 2.5%;
         background-color: white;
-        position: absolute;
+        position: fixed;
         right: -500px;
         transition: .3s all;
     }
@@ -83,6 +98,7 @@
         text-align: left;
         text-decoration: none;
         border-bottom: 1px solid #333;
+        font-family: helvetica, sans-serif;
     }
 
     .nav-signup {
@@ -90,6 +106,7 @@
         border: 1px solid black;
         background-color: transparent;
         color: #333;
+        padding: 10px;
     }
     
     main {
@@ -103,6 +120,7 @@
     }
     .menu-show {
         right: 0!important;
+        border-top: 1px solid black;
     }
     
     /* SPLASH */
@@ -116,7 +134,7 @@
     .splash {
         background-image: url('./images/hiking-splash.jpg');
         background-size: cover;
-        width: 99%;
+        width: 100%;
         height: 365px;
     }
     
@@ -128,10 +146,10 @@
     
     .sign-up-top {
         color: white;
-        background-color:transparent;
+        background-color:rgba(0, 0, 0, 0.6);
         border: 2px solid white;
-        padding: 2px 4px;
-        width: 50%;
+        padding: 10px;
+        width: 30%;
     }
 
     .sign-up-top:hover {
@@ -144,27 +162,12 @@
         margin-bottom: 2%;
     }
     
-    /* NEXT MEETUP */
-    .next-meetup {
-        margin-top: 5%;
-    }
-    
-    .next-meetup-pictures {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-    
-    .next-meetup-pictures img {
-        max-height: 200px;
-        max-width: 150px;
-    }
-    
     /* HIGHLIGHTS */
     .highlights-header {
-        margin-top: 5%;
-        margin-bottom: 2%;
+        border-top: 1px solid black;
+        width: 100%;
+        padding-top: 12%;
+        margin-bottom: 3%;
     }
     
     .highlights-pictures {
@@ -198,6 +201,33 @@
     .sign-up-bottom:hover {
         cursor: pointer;
     }
+
+    /* NEXT MEETUP */
+    .next-meetup {
+
+        margin-top: 5%;
+    }
+    
+    .next-meetup-header {
+        border-top: 1px solid black;
+        width: 100%;
+        padding-top: 12%;
+        margin-bottom: 3%;
+    }
+
+    .next-meetup-pictures {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .next-meetup-pictures img {
+        max-height: 200px;
+        max-width: 150px;
+    }
+
+    /* FOOTER */
     
     footer {
         border-top: 1px solid black;
