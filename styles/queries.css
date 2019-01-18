@@ -87,7 +87,7 @@
         padding-top: 2.5%;
         background-color: white;
         position: fixed;
-        right: -500px;
+        top: -325px;
         transition: .3s all;
     }
     
@@ -120,8 +120,9 @@
         font-size: 32px;
     }
     .menu-show {
-        right: 0!important;
+        margin-top: 400px !important;
         border-top: 1px solid black;
+        background-color: rgba(255, 255, 255, 0.6);
     }
     
     /* SPLASH */
@@ -133,7 +134,7 @@
     }
     
     .splash {
-        background-image: url('./images/hiking-splash.jpg');
+        background-image: url('../images/hiking-splash.jpg');
         background-size: cover;
         width: 100%;
         height: 365px;
