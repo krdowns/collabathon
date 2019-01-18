@@ -68,7 +68,7 @@
     }
 
     .logo-container {
-        margin-right: 17.5%;
+        margin-right: 12.5%;
         margin-top: -10%;    
     }
 
@@ -78,7 +78,7 @@
         font-size: 40px;
         font-weight: bolder;
         margin-top: 20px;
-        margin-right: 20px;
+        margin-right: 10px;
         transition: .2s ease;
         text-decoration: none;
     }
@@ -206,6 +206,7 @@
     /* ABOUT */
     .about-header {
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .about {
