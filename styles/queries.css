@@ -218,6 +218,10 @@
     .about-article:first-of-type p {
         margin-bottom: 10px;
     }
+
+    .about-article:nth-child(1) {
+        margin-bottom: 40px;
+    }
     
     /* HIGHLIGHTS */
     .highlights {
