@@ -4,7 +4,7 @@
     * {
         margin: 0 auto; 
         font-family: sans-serif;
-        font-family: 'helvetica neue', sans-serif;
+        font-family: 'Helvetica Neue', sans-serif;
     }
     
     html {
@@ -43,7 +43,7 @@
         width: calc(100% - 160px);
         text-align: center;
         font-size: 24px;
-        font-weight: bold;
+        font-weight: bolder;
         color: white;
     }
 
@@ -67,19 +67,16 @@
         width: 99%;
     }
 
-    .logo {
-        color: white;
-        font-size: 36px;
-        margin-top: -11.5%;
-        margin-left: 1%;
-        width: 99%;
-        text-align: center;
+    .logo-container {
+        margin-right: 17.5%;
+        margin-top: -10%;    
     }
-    
+
     .top a.menu-icon i {
         position: relative;
-        color: white;
+        color: black;
         font-size: 40px;
+        font-weight: bolder;
         margin-top: 20px;
         margin-right: 20px;
         transition: .2s ease;
@@ -114,7 +111,7 @@
         padding-top: 2.5%;
         background-color: white;
         position: fixed;
-        top: -340px;
+        top: -375px;
         transition: .3s all;
     }
     
@@ -126,16 +123,23 @@
         text-align: left;
         text-decoration: none;
         border-bottom: 1px solid #666;
-        font-family: helvetica, sans-serif;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    .nav-signup-container p {
+        font-weight: bold;
+        margin-top: 20px;
     }
 
     .nav-signup {
-        margin-top: 5%;
+        margin-top: 5px;
         border: none;
         background-color:#F36565;
-        color: #333;
+        color: white;
         padding: 10px;
         margin-bottom: 20px;
+        width: 120px;
+        height: 40px;
     }
     
     main {
@@ -148,7 +152,7 @@
         font-size: 32px;
     }
     .menu-show {
-        margin-top: 320px !important;
+        margin-top: 360px !important;
         border-top: 1px solid black;
         background-color: rgba(255, 255, 255, 0.6);
     }
@@ -158,27 +162,39 @@
         top: 0;
         /* margin-left: -20px; */
         width: 100%;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
     }
     
     .splash {
-        background-image: url('../images/hiking-splash.jpg');
+        background-image: url('../images/picturecollabation.png');
         background-size: cover;
         width: 100%;
-        height: 365px;
+        height: 600px;
         margin-bottom: 40px;
     }
     
     .top-button-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        padding-top: 25%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        /* border: 2px solid blue; */
+        margin-top: 280px;
+        background-color: rgba(0, 0, 0, 0.7);
     }
     
+    .top-button-container-text{
+        color: white;
+        padding-bottom: 10px;
+        font-family: 'Helvetica-Neue';
+        font-weight: bold;
+        font-size: 18px;
+    }
     .sign-up-top {
         color: white;
         background-color:#F36565;
-        border: 2px solid white;
+        border: none;
         height: 40px;
         width: 120px;
     }
@@ -196,17 +212,24 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .about-article {
+        margin-bottom: 20px;
+    }
     
     /* HIGHLIGHTS */
     .highlights {
+        margin-top: 20px;
         margin-left: 20px;
         margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     .highlights-header {
         border-top: 1px solid black;
         width: 100%;
-        padding-top: 12%;
+        padding-top: 20px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
     
@@ -219,14 +242,15 @@
     .next-meetup {
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 40px;
+        margin-top: 20px;
     }
     
     .next-meetup-header {
         border-top: 1px solid black;
         width: 100%;
-        padding-top: 12%;
         margin-bottom: 20px;
+        margin-top: 20px;
+        padding-top: 20px;
     }
 
     .next-meetup-pictures {
@@ -249,6 +273,8 @@
         width: 100%;
         margin-bottom: 20%;
         position: absolute;
+        display: flex;
+        flex-direction: column;
     }
     
     footer h3 {
@@ -258,7 +284,7 @@
     /* BOTTOM BUTTON */
     .bottom-button-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         left: 0;
         width: 100%;
         justify-content: center;
@@ -267,15 +293,20 @@
         margin-bottom: 20%;
     }
     
+    .bottom-button-container p {
+        margin-top: 10px;
+        font-weight: 600;
+    }
     .sign-up-bottom {
-        margin-top: 5%;
+        margin-top: 20px;
         text-align: center;
         justify-content: center;
         padding: 10px 10px;
-        width: 33%;
-        color: black;
-        background-color: white;
-        border: 1px solid black;
+        width: 120px;
+        height: 40px;
+        color: white;
+        background-color: #F36565;
+        border: none;
     }
     
     .sign-up-bottom:hover {
