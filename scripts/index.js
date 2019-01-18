@@ -3,6 +3,10 @@ $(document).ready(function() {
 		$("nav.menu").toggleClass("menu-show");
 	});
 
+	$("body").on('click', '.close-menu-container', function() {
+		$("nav.menu").toggleClass("menu-show");
+	});
+
 	$("nav").find("a").click(function(e) {
 		e.preventDefault();
 		var section = $(this).attr("href");
@@ -11,4 +15,7 @@ $(document).ready(function() {
 		});
 		$("nav.menu").toggleClass("menu-show");
 	});
+	// 	$('#myModal').on('shown.bs.modal', function () {
+	// 	$('#myInput').trigger('focus')
+	// })
 });

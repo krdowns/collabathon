@@ -9,6 +9,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/queries.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -19,11 +23,19 @@
                         dehaze
                     </i>
                 </a>
+                
                 <div class="logo-container">
                     <h1 class="logo">LOGO</h1>
                 </div>
             </div>
                 <nav class="menu">
+                    <div class="close-menu-container">
+                        <a href="#" class="menu-icon-close">
+                            <i class="material-icons">
+                                close
+                            </i>
+                        </a>
+                    </div>
                     <a href="#about" class="item-menu">
                         Our Story
                     </a>
@@ -38,16 +50,17 @@
                     </button>
                 </nav>
             <div class="top-button-container">
-                <button class="sign-up-top">
-                    SIGN UP
+                <button class="sign-up-top" type="button" data-toggle="modal" data-target="#exampleModal">
+                    SIGNUP
                 </button>
             </div>
         </section>
+        
     </header>
 
     <main>
-        <section id="about" class="about">
-            <h1 class="about-header">OUR STORY</h1>
+        <section class="about">
+            <h1 id="about" class="about-header">OUR STORY</h1>
                 <div class="article-container">
                     <article class="about-article">
                         <p>
@@ -62,8 +75,8 @@
                 </div>
         </section>
 
-        <section id="highlights" class="highlights">
-            <h1 class="highlights-header">HIGHLIGHTS</h1>
+        <section class="highlights">
+            <h1 id="highlights" class="highlights-header">HIGHLIGHTS</h1>
             <div class="highlights-pictures">
                 <img src="./images/hiking2.jpg">
                 <article class="highlights-article">
@@ -85,8 +98,8 @@
             </div>
         </section>
 
-        <section id="next-meetup" class="next-meetup">
-            <h1 class="next-meetup-header">NEXT MEETUP</h1>
+        <section class="next-meetup">
+            <h1 id="next-meetup" class="next-meetup-header">NEXT MEETUP</h1>
             <img src="./images/hiking5.jpg">
             <p>Date_Time_Location</p>
             <article class="next-meetup-article">
@@ -102,13 +115,13 @@
             <h3>TAKE YOUR FIRST STEPS TO SUCCESS</h3>
             <section class="bottom-button-container">
                 <button class="sign-up-bottom">
-                    SIGN UP
+                    SIGNUP
                 </button>
             </section>
         </footer>
     </main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script src="./scripts/index.js"></script>
 </body>
 </html>
