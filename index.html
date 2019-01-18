@@ -6,54 +6,90 @@
     <title>Hiking Meetup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <ul class="nav-left">
-                <li>
-                    <a>Home</a>
-                </li>
-            </ul>
-            <ul class="nav-right">         
-                <li class="about-nav-button">
-                    <a>About</a>
-                </li>
-                <li class="stories-nav-button">
-                    <a>Stories</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="menu">
+        <a href="#" class="item-menu">Our Story</a>
+        <a href="#" class="item-menu">Highlights</a>
+        <a href="#" class="item-menu">Next Meetup</a>
+        <button class="nav-signup">SIGNUP</button>
     </nav>
-
-    <section class="splash-container">
-        <button>Sign-Up</button>
-        <div id="myModal" class="modal">    
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+    <main>
+        <section class="splash">
+            <div class="logo-container">
+                <h1 class="logo">LOGO</h1>
             </div>
-        </div>
-    </section>
+                <div class="top">
+                    <a href="#" class="menu-icon"><i class="material-icons">dehaze</i></a>
+                </div>
+            <section class="top-button-container">
+                <button class="sign-up-top">
+                    SIGN UP
+                </button>
+            </section>
+        </section>
 
-    <section class="about">
-        <h2 class="about-header">About Us</h2>
-            <div class="article-container">
-                <article>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat obcaecati nobis iste numquam magnam consectetur quod repellendus natus odio, distinctio, mollitia ut quo debitis, aliquid aliquam perspiciatis illum nihil aperiam.
+        <section class="about">
+            <h2 class="about-header">OUR STORY</h2>
+                <div class="article-container">
+                    <article class="about-article">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt culpa tempora iste, tenetur recusandae similique natus ex quia illum! Fuga harum dicta animi ratione tempora assumenda in deserunt, provident eum.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid similique hic natus, deleniti, cumque delectus facere earum accusantium excepturi omnis quod magnam temporibus voluptatibus deserunt fugiat facilis nam rerum beatae!
+                        </p>
+                    </article>
+                </div>
+        </section>
+
+        <section class="highlights">
+            <h2 class="highlights-header">HIGHLIGHTS</h2>
+            <div class="highlights-pictures">
+                <img src="#">
+                <article class="highlights-article">
+                    <p>
+                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+                    </p>
                 </article>
-                <article>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quia doloremque magni animi, odio assumenda ipsam vel officia qui dolorem dolorum fuga modi possimus incidunt beatae asperiores voluptate quis perferendis!
+                <img src="#">
+                <article class="highlights-article">
+                    <p>
+                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
                 </article>
-                <article>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique voluptatum voluptatibus temporibus ea expedita inventore iusto cumque molestias est perferendis, incidunt eum reiciendis adipisci nihil quia laudantium minus eos porro!
+                <img src="#">
+                <article class="highlights-article">
+                    <p>
+                        "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+                    </p>
                 </article>
             </div>
-    </section>
+        </section>
 
-    <section>
-        <h2>Stories</h2>
-    </section>
+        <section>
+            <h2 class="next-meetup-header">NEXT MEETUP</h2>
+            <img src="#">
+            <p>Date_Time_Location</p>
+            <article class="next-meetup-article">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt culpa tempora iste, tenetur recusandae similique natus ex quia illum! Fuga harum dicta animi ratione tempora assumenda in deserunt, provident eum.
+                </p>
+            </article>
+        </section>
+
+
+
+        <footer>
+            <h3>TAKE YOUR FIRST STEPS TO SUCCESS</h3>
+            <section class="bottom-button-container">
+                <button class="sign-up-bottom">
+                    SIGN UP
+                </button>
+            </section>
+        </footer>
+    </main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
