@@ -270,16 +270,24 @@
     
     footer {
         border-top: 1px solid black;
-        margin-top: 40px;
+        margin-top: 20px;
         width: 100%;
         margin-bottom: 20%;
+        margin-right: 20px;
         position: absolute;
         display: flex;
         flex-direction: column;
     }
     
     footer h3 {
-        margin-top: 15%;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
     }
 
     /* BOTTOM BUTTON */
