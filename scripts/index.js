@@ -16,7 +16,4 @@ $(document).ready(function() {
 		});
 		$("nav.menu").toggleClass("menu-show");
 	});
-	// 	$('#myModal').on('shown.bs.modal', function () {
-	// 	$('#myInput').trigger('focus')
-	// })
 });

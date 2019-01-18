@@ -11,9 +11,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
     <link rel=icon href=../images/favicon.png>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
@@ -47,8 +51,8 @@
                     </a>
                     <div class="nav-signup-container">
                         <p>Sign up for our newsletter!</p>
-                        <button class="nav-signup">
-                            SIGNUP
+                        <button class="nav-signup" type="button" data-toggle="modal" data-target="#exampleModal">
+                            JOIN US
                         </button>
                     </div>
                 </nav>
@@ -60,6 +64,39 @@
                 <button class="sign-up-top" type="button" data-toggle="modal" data-target="#exampleModal">
                     JOIN US
                 </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">JOIN US for our Newsletter!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group text-left">
+                                    <input type="first-name" class="form-control" id="first-name" placeholder="First Name">
+                                    <small id="first-name-help" class="form-text text-muted">No numbers or special characters. Must be more than 2 letters</small>
+                                </div>
+                                <div class="form-group text-left">
+                                    <input type="last-name" class="form-control" id="last-name" placeholder="Last Name">
+                                    <small id="last-name-help" class="form-text text-muted text-left">No numbers or special characters. Must be more than 2 letters</small>
+                                </div>
+                                <div class="form-group text-left">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                                    <small id="emailHelp" class="form-text text-muted text-left">Must have a (.)<br>Must have an (@)</small>                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg sign-up-modal-btn">Submit</button>
+                                <small id="privacy" class="form-text text-muted">Don't worry!<br>We handle your information with care!<br><a href="https://mailchimp.com/">Mail Chimp<a> handles our signup and they are awesome!</small>
+                            </form>
+                        </div>
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div> -->
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -123,10 +160,10 @@
         <footer>
             <h3>TAKE YOUR FIRST STEPS TO SUCCESS</h3>
             <section class="bottom-button-container">
-                <p>Sign up for our newsletter and receive updates for upcoming hiking meetups!</p>
-                <button class="sign-up-bottom">
-                    JOIN US
+                <button class="sign-up-bottom" data-toggle="modal" data-target="#exampleModal">
+                    Join Us
                 </button>
+                <p>Sign up for our newsletter and receive updates for upcoming hiking meetups!</p>
             </section>
         </footer>
     </main>
