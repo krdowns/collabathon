@@ -263,6 +263,11 @@
         max-width: 150px;
     }
 
+    .date-container {
+        margin-top: 10px;
+        font-family: 'Helvetica Neue', sans-serif;
+    }
+
     /* FOOTER */
     
     footer {
