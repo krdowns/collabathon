@@ -249,6 +249,7 @@
         margin-bottom: 20px;
         margin-top: 20px;
         padding-top: 20px;
+        word-wrap: none;
     }
 
     .next-meetup-pictures {
