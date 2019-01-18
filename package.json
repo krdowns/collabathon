@@ -1,0 +1,22 @@
+{
+  "name": "collabathon",
+  "version": "1.0.0",
+  "description": "collabathon hiking app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krdowns/collabathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krdowns/collabathon/issues"
+  },
+  "homepage": "https://github.com/krdowns/collabathon#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
